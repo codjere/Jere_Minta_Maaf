@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Aku Minta Maaf — Belum Bisa Join</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<div class="card" id="nameCard">
+		<h1>Hai 💬</h1>
+		<p>Kepada siapa aku minta maaf? Tulis namanya:</p>
+		<input type="text" id="nickname" placeholder="contoh: Jeremiah" />
+		<button id="submitName">Lanjut</button>
+	</div>
+	<div class="card" id="apologyCard" style="display:none;">
+		<h1 id="apologyTitle">Maaf</h1>
+		<p id="apologyText">Maaf ya kak *emot sorry <span id="recipient">...</span>, aku belum bisa hadir kali ini. Semoga keatannya lancar dan menyenangkan.</p>
+		<div class="btn-group">
+			<button id="backBtn">Kembali</button>
+		</div>
+	</div>
+
+	<div class="footer">
+		Made by <a href="#" target="_blank" rel="noopener">Jere</a> 💖
+	</div>
+
+	<!-- Popup -->
+	<div class="popup" id="popup" style="display:none;">
+		<div class="popup-content">
+			<h2 id="popupTitle"></h2>
+			<p id="popupMsg"></p>
+			<div id="hearts"></div>
+			<button id="closePopup">Tutup</button>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
